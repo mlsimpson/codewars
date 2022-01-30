@@ -26,6 +26,7 @@
 
 # https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39/solutions/python
 
+# Use like 'one = make_number(1)'
 def make_number(num):
     def func(op=None):
         if op:
