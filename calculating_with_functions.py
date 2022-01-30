@@ -24,6 +24,16 @@
 # would print x = 5, y = 8
 # just to illustrate the concept of functions returning functions
 
+# https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39/solutions/python
+
+def make_number(num):
+    def func(op=None):
+        if op:
+            return func(num)
+        else:
+            return num
+    return func
+
 def zero(*args): #your code here
 	if len(args) == 0:
 		return 0
