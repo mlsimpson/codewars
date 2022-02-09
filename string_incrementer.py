@@ -2,45 +2,6 @@
 # I made this way more complicated than it needed to be... check above url
 # zfill() is useful!
 
-def increment_string_wrong(s):
-    outchars = ''
-    outnum = '0'
-    numcount = 0
-    for char in s:
-        if char.isalpha():
-            outchars += char
-        else:
-            numcount += 1
-            outnum += char
-
-    print(outchars, outnum)
-
-    outnum = int(outnum) + 1
-
-    padding = ''
-
-    numpad = len(str(outnum)) - 1
-
-    # print(len(str(outnum)), numcount)
-    if len(str(outnum)) < numcount:
-        while numpad < (numcount - 1):
-            padding += '0'
-            numpad += 1
-
-    # print(padding)
-
-    # if len(padding + str(outnum)) > numcount:
-    #    padding = padding[1:]
-
-    # print(padding)
-
-    print(s)
-
-    # print(outchars + " " + padding + " " + str(outnum))
-    # print("numcount:", numcount)
-
-    return (outchars + padding + str(outnum))
-
 # start from end of input string
 # split upon first non-numeric char
 def increment_string(s):
