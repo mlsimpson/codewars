@@ -7,18 +7,21 @@
 def increment_string(s):
     numcount = 0
     revstr = s[::-1]
+    nums = '0'
     # print(revstr)
     while len(s) > numcount and revstr[numcount].isdigit():
         numcount += 1
     # print(numcount)
     # print(outnum, numcount)
-    if numcount > 0:
-        chars = s[:-numcount]
-        nums = s[-numcount:]
-    else:
-        chars = s
-        nums = "0"
+    # if numcount > 0:
+    #     chars = s[:-numcount]
+    #     nums = s[-numcount:]
+    # else:
+    #     chars = s
+    #     nums = "0"
     # print(chars, nums, numcount)
+    chars = s[:(len(s) - numcount)]
+    nums = nums + s[len(s) - numcount:]
     final_num = str(int(nums) + 1)
 
     # print(len(final_num), numcount)
