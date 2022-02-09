@@ -8,7 +8,7 @@ def increment_string(s):
     numcount = 0
     revstr = s[::-1]
     # print(revstr)
-    while len(s) > numcount and revstr[numcount].isnumeric():
+    while len(s) > numcount and revstr[numcount].isdigit():
         numcount += 1
     # print(numcount)
     # print(outnum, numcount)
