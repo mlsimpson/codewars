@@ -28,3 +28,15 @@ def max_sequence2(arr):
 
     return max_sum
 
+# or
+# this works for an array with all negative number
+def kadane(arr):
+    maximum = arr[0]
+    curr = arr[0]
+
+    for i in range(1, len(arr)):
+        curr = max(arr[i], curr + arr[i])
+        maximum = max(maximum, curr)
+
+    return maximum
+
