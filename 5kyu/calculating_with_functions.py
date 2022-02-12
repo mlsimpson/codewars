@@ -30,7 +30,7 @@
 def make_number(num):
     def func(op=None):
         if op:
-            return func(num)
+            return op(num)
         else:
             return num
     return func
