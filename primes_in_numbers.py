@@ -1,4 +1,4 @@
-#
+# https://www.codewars.com/kata/54d512e62a5e54c96200019e/solutions/python
 
 def prime_factors(n):
     i = 2
