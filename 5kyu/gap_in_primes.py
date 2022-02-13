@@ -30,7 +30,7 @@ def gap1(g, m, n):
         i += 1
 
 # what if i did this with a yield?
-def get_primes1(start, end):
+def get_primes(start, end):
     primes = []
 
     for i in range(start, end + 1):
