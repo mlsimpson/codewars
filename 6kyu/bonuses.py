@@ -2,6 +2,9 @@
 # oof. inverse variation over three variables
 # arr[0]*x == arr[1]*y, and so on...
 
+#    s=s/(sum(1/n for n in arr))
+#    return [round(s/n) for n in arr]
+
 def bonus(arr, s):
     coefficients = []
     out = []
@@ -20,5 +23,4 @@ def bonus(arr, s):
         out.append(round(target / i))
 
     return out
-
 
